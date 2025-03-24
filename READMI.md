@@ -244,15 +244,15 @@ if (age >= 18) {
 ## SWITCH Statement
 A `switch` statement can replace multiple `if-else` conditions. It checks a value against multiple cases.
 
-```javascript
-let fruit = "apple";
+```java
+String fruit = "apple";
 switch (fruit) {
   case "apple":
-    console.log("You selected Apple");
+    System.out.println("You selected Apple");
     break;
   case "banana":
-    console.log("You selected Banana");
+    System.out.println("You selected Banana");
     break;
   default:
-    console.log("Invalid selection");
+    System.out.println("Invalid selection");
 }
