@@ -379,10 +379,10 @@ while(people[i]){
 }
 }
 ```
-## Do Wileloop 
+## Do While Loop 
 Anyways runs the code before checking the condition.
 
-```javascrpit
+```javascript
 let i - 0;
 
 do{
