@@ -207,6 +207,8 @@ if (age >= 18) {
 ```
 
 ## ELSE IF Statement
+USes the `else` Keyword and {} it is used in combinationwith the IF Keyword if you want additional specific conditions. You can add as many as you want.
+
 ```javascript
 let age = 18;
 if (age >= 18) {
@@ -219,9 +221,13 @@ if (age >= 18) {
 ```
 
 ## Logical Operators
-- `&&` AND
-- `||` OR
-- `!` NOT
+Used in combination with conditional statements to create more complex conditions.
+
+It allows programmers to put 2 or more condtons in one expression.
+- Operators   Description
+- `&&`            AND
+- `||`            OR
+- `!`             NOT 
 
 ### Example
 ```javascript
@@ -231,6 +237,8 @@ console.log(age >= 18 && experience > 1); // true
 ```
 
 ## Nested Conditional Statements
+Uses the `else` Keyword and {} it is used in combinationwith the IF Keyword if you want additional specific conditions. You can add as many as you want.
+
 ```javascript
 let age = 18;
 let experience = 3;
