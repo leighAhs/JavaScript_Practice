@@ -207,7 +207,7 @@ if (age >= 18) {
 ```
 
 ## ELSE IF Statement
-USes the `else` Keyword and {} it is used in combinationwith the IF Keyword if you want additional specific conditions. You can add as many as you want.
+Uses the `else` Keyword and {} it is used in combinationwith the IF Keyword if you want additional specific conditions. You can add as many as you want.
 
 ```javascript
 let age = 18;
@@ -258,7 +258,7 @@ let hasDegree = true;
 	// true
 
 ```
-### OR Operator 
+### NOT Operator 
 inverts the result of a CONDITION
 
 ```javascript
