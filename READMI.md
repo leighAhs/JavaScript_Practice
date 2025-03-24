@@ -351,3 +351,41 @@ switch(difficulty){
     break; 
 }
 ```
+
+## While loop
+ Is used to execute a block of code, while the condition is met/true
+
+```javascript
+let i = 0
+while(i < 5){
+  console.log("Hello");
+  i++;
+}
+```
+
+## Iterate Keyword
+You can use the break keyword to break out of a loop earlier than expected.
+
+```javascript
+let people = ["Juan", "Jose", "Kyro", "Zian",];
+let i = 0;
+
+while(people[i]){
+  console.log(people[i]);
+  i++;
+
+	if(i === 1){
+	  break;
+}
+}
+```
+## Do Wileloop 
+Anyways runs the code before checking the condition.
+
+```javascrpit
+let i - 0;
+
+do{
+  console.log("Hello");
+}while(i > 5);
+```
