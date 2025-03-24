@@ -29,6 +29,10 @@ console.log("Hi");
 ## `document.getElementById()`
 This code retrieves an element from HTML using its ID and lets us manipulate its properties/attributes.
 
+```javascript
+document.getElementByID("someid");
+```
+
 ## Developer Tools
 Developer tools are useful for debugging JavaScript codes and also viewing our output using `console.log()`.
 
@@ -242,17 +246,63 @@ if (age >= 18) {
 ```
 
 ## SWITCH Statement
-A `switch` statement can replace multiple `if-else` conditions. It checks a value against multiple cases.
+Are used to execute code depending on a case. It acts like conditional Statements but can only check equality.
 
 ```javascript
-let fruit = "apple";
-switch (fruit) {
-  case "apple":
-    console.log("You selected Apple");
+let difficuty = 1;
+
+switch(difficulty){
+  case 1:
+    console.log("Easy");
     break;
-  case "banana":
-    console.log("You selected Banana");
+  case 2:
+    console.log("Normal");
+    break;
+  case 3:
+    console.log("Hard");
+    break;
+}
+```
+
+## `default` Keyword
+Default keyword used to handle all cases that weren't specified.
+
+```javascript
+let difficuty = 1;
+
+switch(difficulty){
+  case 1:
+    console.log("Easy");
+    break;
+  case 2:
+    console.log("Normal");
+    break;
+  case 3:
+    console.log("Hard");
     break;
   default:
-    console.log("Invalid selection");
+    cosnole.log("Invalid Difficulty");
+    break; 
 }
+```
+
+### Common Case
+You can specify two or more cases in a code block.
+
+```javascript
+let num = 2;
+
+switch(difficulty){
+  case 2:
+  case 4:
+    console.log("Even");
+    break;
+  case 3:
+  case 5:
+    console.log("Odd");
+    break;
+  default:
+    cosnole.log("Unknown");
+    break; 
+}
+```
