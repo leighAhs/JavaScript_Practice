@@ -224,16 +224,53 @@ if (age >= 18) {
 Used in combination with conditional statements to create more complex conditions.
 
 It allows programmers to put 2 or more condtons in one expression.
-- Operators   Description
-- `&&`            AND
-- `||`            OR
-- `!`             NOT 
 
-### Example
+- `&&` AND
+- `||` OR
+- `!` NOT
+
+### AND Operator 
+both CONDITIONS should be true
+
 ```javascript
 let age = 18;
-let experience = 3;
-console.log(age >= 18 && experience > 1); // true
+	let experience = 3;
+
+	console.log(age >= 18 && experience > 1);
+	//true
+
+	console.log(age >= 18 && experience > 3);
+	//false
+
+```
+
+### OR Operator 
+either CONDITIONS should be true
+
+```javascript
+let hasDegree = true;
+	let experience = 3;
+
+	console.log(hasDegree || experience > 2);
+	//true
+
+	console.log(hasDegree || experience > 4);
+	// true
+
+```
+### OR Operator 
+inverts the result of a CONDITION
+
+```javascript
+let hasDegree = true;
+	let experience = 3;
+
+	console.log(!hasDegree);
+	//false
+
+	console.log(!(experience > 1));
+	//false
+
 ```
 
 ## Nested Conditional Statements
