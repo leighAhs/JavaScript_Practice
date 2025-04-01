@@ -224,6 +224,12 @@ We need to specify the index in order to change/add a certain element value.
 	//ADD using unshift(value)
 	cars.unshift("Lancer");
   ```
+## DELETING Arrays
+- There are many ways to DELETE an element on the array.
+  - `length` - Change length to desire number.
+  - `pop()` - Deletes the last element.
+  - `shift()` - Deletes the first element.
+  - `slice(start, end)` - Gets a part of the arrays.
 
 ## Conditional Statements
 Conditional statements execute actions depending on different conditions using **Comparison Operators** and **Logical Operators**.
