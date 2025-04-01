@@ -723,3 +723,32 @@ let people = [
 ];
 console.log(people[0].firstName);
 ```
+
+## JSON & FOR/IN Loop
+We can use FOR/IN Loop to ITERATE over all the keys inside a JSON.
+
+```javascript 
+let person = {
+   firstName: "Juan",
+   lastName: "Cruz",
+   age: 22
+}
+
+for(let k in person){
+  console.log(k);
+}
+```
+
+## `Object.keys()` Method
+Returns the keys of a JSON in an array format.
+
+```javascript
+let person = {
+   firstName: "Juan",
+   lastName: "Cruz",
+   age: 22
+}
+
+let keys = Object.keys(person);
+console.log(keys);
+```
