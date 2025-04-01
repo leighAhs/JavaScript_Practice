@@ -123,7 +123,7 @@ let name = "Leigh";
 console.log("Hi, " + name);
 ```
 
-## Strings
+## STRINGS
 A **string** is a datatype that contains characters, words, or sentences surrounded by `""` or `''`.
 
 ### String Length
@@ -161,7 +161,7 @@ let name = "Leigh";
 console.log(`Hi, ${name}`);
 ```
 
-## Arrays
+## ARRAYS
 A variable that can store multiple values. The values inside an array is called an element.
 
 ```javascript
@@ -185,6 +185,19 @@ let names = ["Leigh", "Ahsley", "Villanueva", "Gadoc"];
 console.log(names.legth);
 //The length of this Array is 4
 ```
+
+## READING Arrays
+- We need to specify the index in order to access a certain element value.
+  
+  - //Syntax
+	identifier[index];
+
+  ```javascript
+  //Example 
+	let cars = ["Accent", "Civic"];
+	console.log(cars[0]);
+  ```
+
 
 ## Conditional Statements
 Conditional statements execute actions depending on different conditions using **Comparison Operators** and **Logical Operators**.
