@@ -189,8 +189,7 @@ console.log(names.legth);
 ## READING Arrays
 - We need to specify the index in order to access a certain element value.
   
-  - //Syntax
-	identifier[index];
+  - identifier[index];
 
   ```javascript
   //Example 
@@ -198,6 +197,21 @@ console.log(names.legth);
 	console.log(cars[0]);
   ```
 
+## UPDATING Arrays
+We need to specify the index in order to change/add a certain element value.
+
+  - identifier[index] = value;
+
+  ```javascript
+  //Example
+	let cars = ["Accent", "Civic"];
+	cars[1] = "Vios";
+  ```
+  There are more ways to ADD an element on the array.
+  -Method-
+  length - Use as an index to add an element to the last index.
+  push(value) - Adds an element on the last index.
+  unshift(value) - Adds an element on the first index.
 
 ## Conditional Statements
 Conditional statements execute actions depending on different conditions using **Comparison Operators** and **Logical Operators**.
