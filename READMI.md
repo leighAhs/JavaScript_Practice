@@ -207,13 +207,13 @@ We need to specify the index in order to change/add a certain element value.
 	let cars = ["Accent", "Civic"];
 	cars[1] = "Vios";
   ```
-    - There are more ways to ADD an element on the array.
-    - length - Use as an index to add an element to the last index.
-    - `push(value)` - Adds an element on the last index.
-    - `unshift(value)` - Adds an element on the first index.
+  - There are more ways to ADD an element on the array.
+  - length - Use as an index to add an element to the last index.
+  - `push(value)` - Adds an element on the last index.
+  - `unshift(value)` - Adds an element on the first index.
 
-    ```javascript
-    let cars = ["Accent", "Civic"];
+  ```javascript
+  let cars = ["Accent", "Civic"];
 
 	//ADD using LENGTH
 	cars[cars.length] = "Vios";
@@ -223,7 +223,7 @@ We need to specify the index in order to change/add a certain element value.
 
 	//ADD using unshift(value)
 	cars.unshift("Lancer");
-    ```
+  ```
 
 ## Conditional Statements
 Conditional statements execute actions depending on different conditions using **Comparison Operators** and **Logical Operators**.
