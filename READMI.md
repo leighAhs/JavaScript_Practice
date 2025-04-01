@@ -231,21 +231,22 @@ We need to specify the index in order to change/add a certain element value.
   - `pop()` - Deletes the last element.
   - `shift()` - Deletes the first element.
   - `slice(start, end)` - Gets a part of the arrays.
-    ```javascript
-    let names = ["Leigh", "Ahsley", "Villanueva", "Gadoc",];
+
+  ```javascript
+  let names = ["Leigh", "Ahsley", "Villanueva", "Gadoc",];
 	
-  	//DELETE using LENGTH
+  //DELETE using LENGTH
   	names.length = 4;
 	
-	  //DELETE using pop();
+	//DELETE using pop();
 	  names.pop();
 
-	  //DELETE using shift()
-	  names.shift();
+	//DELETE using shift()
+	names.shift();
 	
-	  //DELETE using slice(start_index, end_index);
-  	names.slice(0,2); 
-    ```
+	//DELETE using slice(start_index, end_index);
+  names.slice(0,2); 
+  ```
 
 ## Conditional Statements
 Conditional statements execute actions depending on different conditions using **Comparison Operators** and **Logical Operators**.
@@ -262,11 +263,47 @@ Conditional statements execute actions depending on different conditions using *
 
 ### Example
 ```javascript
-console.log(5 == "5"); // true
-console.log(5 === "5"); // false
+console.log(5 == "5");
+//Output: true
+		
+console.log(5 === "5");
+//Output: false
+
+console.log(5 != "5");
+//Output: false
+		
+console.log(5 !== "5");
+//Output: true
+
+let x = 5;
+		
+console.log(x == "5");
+//Output: true
+
+console.log(x === "5");
+//Output: false
+
+console.log(x != "5");
+//Output: false
+
+console.log(x !== "5");
+//Output: true
+
+console.log(13 > 10);
+//true
+		
+console.log(5 < 10);
+//true
+
+console.log(5 >= 5);
+//true
+
+console.log(5 <= 7);
+//true
 ```
 
 ## IF Statement
+Uses the IF keyword and {} to check for a certain condition.
 ```javascript
 let age = 18;
 if (age >= 18) {
@@ -283,9 +320,10 @@ if (age >= 18) {
   console.log("Minor Age");
 }
 ```
+--The code inside {} will only be executed if the comparison is true--
 
 ## ELSE IF Statement
-Uses the `else` Keyword and {} it is used in combinationwith the IF Keyword if you want additional specific conditions. You can add as many as you want.
+Uses the `else` Keyword and {} it is used in combination with the IF Keyword if you want additional specific conditions. You can add as many as you want.
 
 ```javascript
 let age = 18;
