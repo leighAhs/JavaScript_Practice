@@ -224,12 +224,28 @@ We need to specify the index in order to change/add a certain element value.
 	//ADD using unshift(value)
 	cars.unshift("Lancer");
   ```
+
 ## DELETING Arrays
 - There are many ways to DELETE an element on the array.
   - `length` - Change length to desire number.
   - `pop()` - Deletes the last element.
   - `shift()` - Deletes the first element.
   - `slice(start, end)` - Gets a part of the arrays.
+    ```javascript
+    let names = ["Leigh", "Ahsley", "Villanueva", "Gadoc",];
+	
+  	//DELETE using LENGTH
+  	names.length = 4;
+	
+	  //DELETE using pop();
+	  names.pop();
+
+	  //DELETE using shift()
+	  names.shift();
+	
+	  //DELETE using slice(start_index, end_index);
+  	names.slice(0,2); 
+    ```
 
 ## Conditional Statements
 Conditional statements execute actions depending on different conditions using **Comparison Operators** and **Logical Operators**.
