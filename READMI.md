@@ -562,3 +562,164 @@ for(let person of people){
   console.log(person);
 }
 ```
+
+## JSON (JavaScript Object Notation)
+Is a file format that is commonly used in trasporting data, via API or other means.
+
+```javascript
+// JSON Example
+let person = {
+  firsName:"Juan",
+  lastName:"Cruz",
+  age:22;
+};
+```
+
+## JSON Structure
+A JSON Data should hace a key | value pair and a colon '`:`' in the middle. JSONs should have be surrounded by `{}`.
+
+`let person = {firstName:"Jayson"};`
+
+A JSON can also have arrays as its value.
+
+```javascript
+let person = {
+  firsName:"Juan",
+  lastName:"Cruz",
+  age:22,
+  hobbies:["coding", "eating", "sleeping"]
+};
+```
+
+A JSON can also have JSONs as its value.
+```javascript
+let person = {
+  firsName:"Juan",
+  lastName:"Cruz",
+  age:22,
+  hobbies:["coding", "eating", "sleeping"],
+  pets:{
+    0:{
+      name:"Shadow",
+      type:"Dog"
+    },
+    1:{
+    name:"Mocha",
+    type:"Cat"
+    }
+  }
+};
+```
+
+### JSON Read
+You can READ specific values of a JSON by using its key surrounded by `[]`.
+
+```javascript
+let person = {
+  firstName:"Juan",
+  lastName:"Cruz",
+  age:22
+};
+
+console.log(person["firstName"]);
+console.log(person["lastName"]);
+```
+
+You can also READ specific values of JSON by using a period followed by the key.
+
+```javascript
+let person = {
+  firstName:"Juan",
+  lastName:"Cruz",
+  age:22
+};
+// Only works on a "String" Key
+console.log(person.firstName);
+console.log(person.lastName);
+```
+
+You can read array values in a JSON by using its key and accessing it normally by index.
+
+```javascript 
+let person = {
+  firstName:"Juan",
+  lastName:"Cruz",
+  age:22,
+  hobbies:["coding", "eating", "sleeping"]
+};
+
+console.log(person["hobbies"][0]);
+console.log(person["hobbies"][1]);
+```
+
+## JSON Write
+You can UPDATE specific values of a JSON by using its key surrounded by `[]` and assigning a value to it.
+
+```javascript
+let person = {
+  firstName:"Juan",
+  lastName:"Cruz",
+  age:22,
+};
+
+//Update Existing "key|value"
+person["firstName"] = "John";
+console.log.(person);
+
+//Create New "key|value"
+person["middleInitial"] = "F";
+console.log(person);
+```
+
+Assigning to value to a non-existent key will result into adding it.
+
+You can also UPDATE specific values of a JSON by using a period followed by the key and assigning a value to it.
+
+## JSON Stringify
+You can convert JSON into string by using the JSON.`stringify()` method.
+
+```javascript
+let person = {
+  firstName:"Juan",
+  lastName:"Cruz",
+  age:22,
+};
+
+let strPerson = JSON.stringify(person);
+console.log(strPerson);
+```
+
+## JSON Parsing
+You can convert valid Strings into JSON by using the `JSON.parse()` method.
+
+```javascript
+let strPerson = `{"firstNmae":"Juan","lastName":"Cruz","age":"20"}`;
+
+let person = JSON.parse(strPerson);
+console.log(person);
+```
+  *if a string is invalid it would throw an error at the console.*
+
+## JSON Array
+You can also create an Array of JSONs. Which can be manipulated the same as any other arrays.
+
+```javascript
+let people = [
+    {
+        firstName: "Juan",
+        lastName: "Cruz",
+        age: 22
+    },
+    {
+        firstName: "Juan",
+        lastName: "Cruz",
+        age: 21
+    },
+    {
+        firstName: "Juan",
+        lastName: "Cruz",
+        age: 20
+    },
+];
+console.log(people[0].firstName);
+```
