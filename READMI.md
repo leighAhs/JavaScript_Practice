@@ -143,14 +143,16 @@ console.log(name[0]); // Output: L
 ```
 
 ## String Methods
-Some useful string methods include:
+These different methods can manipulate strings in different ways
 
 - `toUpperCase()` - Converts string to uppercase.
 - `toLowerCase()` - Converts string to lowercase.
 - `trim()` - Removes extra spaces at the start and end.
-- `replace()` - Replaces the first matching word.
+- `trimEnd()` - Removes extra spaces at the end.
+- `trimStart()` - Removes extra spaces at the start.
+- `replace(from, to)` - Replaces the first matching word.
 - `replaceAll()` - Replaces all matching words.
-- `slice()` - Extracts a part of a string.
+- `slice(start, end)` - Extracts a part of a string.
 
 ## String Template Literals
 Use backticks `` ` `` to create string literals.
@@ -160,13 +162,28 @@ console.log(`Hi, ${name}`);
 ```
 
 ## Arrays
-An array is a variable that can store multiple values.
+A variable that can store multiple values. The values inside an array is called an element.
+
+```javascript
+// Array of Strings
+let names = ["Leigh", "Ahsley", "Villanueva", "Gadoc"];
+
+// Array of Numbers
+	let number = [3, 6.5, 9.35, 12.75, 7, 2];
+
+// Array of Mixed Datatypes
+let mixed = ["Leigh", 99, "David", true, 3.99];
+
+// Empty Array
+let dummy = [];
+```
+### Array length
+We can use the legth property to get the length of an array.
 
 ```javascript
 let names = ["Leigh", "Ahsley", "Villanueva", "Gadoc"];
-let numbers = [3, 6.5, 9.35, 12.75, 7, 2];
-let mixed = ["Leigh", 99, "David", true, 3.99];
-let empty = [];
+console.log(names.legth);
+//The length of this Array is 4
 ```
 
 ## Conditional Statements
@@ -388,4 +405,61 @@ let i - 0;
 do{
   console.log("Hello");
 }while(i > 5);
+```
+
+## FOR Loop
+Used to execute a block of code, while the condition is met/true.
+
+```javascript
+for(let i = 0; i < 5; i++){
+	  console.log("Hello");
+}
+```
+
+## ITERATE array 
+You can use for loop to read through all the array elements.
+
+```javascript
+let people = ["Juan", "Pedro", "Jasper", "Jose"];
+
+for(let i = 0;i < people.lenght; i++){
+  console.log(people[i]);
+}
+```
+## For Loop vs. While Loop
+`for` loops are used when the number of the iterations are known. While loops are used when the number of iterations are unknown.
+
+## Break Keyword
+You can use the break keyword to break out of a loop earlier than expected.
+
+```javascript
+let people = ["Juan", "Pedro", "Jasper", "Jose"];
+
+for(let i = 0;i < people.length; i++){
+  console.log(people[i]);
+
+  if(i === 1){
+  break;
+  }
+}
+```
+## For/in Loop
+Are used for iterating over JSONs or Arrays. It returns the key or index of each item.
+
+```javascript
+let people = ["Juan", "Pedro", "Jasper", "Jose"];
+
+for(let i in people){
+  console.log(people[i]);
+}
+```
+## For/of Loop
+Are used for iterating over Arrays. IT returns the value of each element.
+
+```javascript
+let people = ["Juan", "Pedro", "Jasper", "Jose"];
+
+for(let person of people){
+  console.log(person);
+}
 ```
