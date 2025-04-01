@@ -177,8 +177,8 @@ let mixed = ["Leigh", 99, "David", true, 3.99];
 // Empty Array
 let dummy = [];
 ```
-  ### Array length
-We can use the legth property to get the length of an array.
+### Array length
+- We can use the legth property to get the length of an array.
 
 ```javascript
 let names = ["Leigh", "Ahsley", "Villanueva", "Gadoc"];
